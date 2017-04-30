@@ -10,30 +10,49 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      background-color: #21252b;
     }
     body {
       display: flex;
       align-items: center;
       justify-content: center;
+      background-position: center center;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAABtJREFUCJljYCAbvHnz5v+bN2/+w/hM5BuFDgCTXgeJj9QB4wAAAABJRU5ErkJggg==)
     }
-    .code {
+    .logo {
       align-self: center;
-      font-size: 16pt;
-      font-family: monospace;
-      box-sizing: border-box;
+      display: block;
+      height: 30%;
     }
-    .white {
-      color: #abb2bf;
+    .logo > svg {
+      height: 100%;
+      width: 100%;
     }
-    .red {
-      color: #e06c75;
+    .logo > svg > .g:hover > .p:not(:hover) {
+      fill: gray;
+      opacity: 0.5;
+    }
+    .logo > svg > .g > .p {
+      transition: 0.25s;
     }
   </style>
 </head>
 <body>
-  <span class="code"/>
-    <span class="white"><</span><span class="red">frontful</span><span class="white">/></span>
-  </span>
+  <a class="logo" href="https://github.com/frontful">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="641 -501 360 360">
+      <g class="g">
+        <path fill="#fff" d="M676-501h150a175 175 0 0 1 175 175v185H819a178 178 0 0 1-178-178v-147a35 35 0 0 1 35-35z"/>
+        <path class="p" fill="#f4d41d" d="M740-170.7V-403h77v252a167.2 167.2 0 0 1-77-19.7z"/>
+        <path class="p" fill="#2687c7" d="M740-413v-78h86a164.9 164.9 0 0 1 140.23 78z"/>
+        <g class="p" fill="#73a937">
+          <path d="M651.03-316H730v139.5A167.9 167.9 0 0 1 651.03-316z"/>
+          <path d="M651-413v-53a25 25 0 0 1 25-25h54v78z"/>
+        </g>
+        <g class="p" fill="#d4421e">
+          <path d="M827-325.72V-403h144.97A164.28 164.28 0 0 1 991-326v.28z"/>
+          <path d="M651-325.72V-403h79v77.28z"/>
+        </g>
+      </g>
+    </svg>
+  </a>
 </body>
 </html>
